@@ -2,7 +2,7 @@ export default function Navbar(){
     return(
         <div>
             <h1>
-                hello world
+                navbar
             </h1>
         </div>
     )
