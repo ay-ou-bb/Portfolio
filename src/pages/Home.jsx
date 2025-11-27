@@ -1,4 +1,3 @@
-import Navbar from "../components/Navbar.jsx"
 import About from "../components/About.jsx"
 import Hero from "../components/Hero.jsx"
 import Skills from "../components/Skills.jsx"
@@ -8,13 +7,12 @@ import Contact from "../components/Contact.jsx"
 
 export default function Home(){
     return(
-       <>
-        <Navbar/>
+       <div className="w-full">
         <Hero/>
         <About/>
         <Skills/>
         <Projects/>
         <Contact/>
-       </> 
+       </div> 
     )
 }
