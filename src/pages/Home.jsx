@@ -5,6 +5,7 @@ import Projects from "../components/Projects.jsx"
 import Contact from "../components/Contact.jsx"
 
 
+
 export default function Home(){
     return(
        <div className="w-full">
