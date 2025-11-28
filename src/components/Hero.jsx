@@ -43,7 +43,7 @@ export default function Hero(){
    
     return(
         
-        <div className="w-full flex justify-center items-center  flex-col bg-[#0F172A] text-white flex" >
+        <div className="w-full flex justify-center items-center  flex-col bg-[#0F172A] text-white " >
             <div className="flex items-center justify-between w-full">
                 <h3 className="mx-8  basis-1/5 text-[#F8FAFC] font-bold">{name}</h3>
                 <Navbar visible = {visible || open}/>
@@ -56,13 +56,13 @@ export default function Hero(){
                 </div>
             </div>
             
-            <div className="flex justify-center items-center mt-16 flex-col-reverse   md:justify-around  md:mt-24  flex-col md:flex-row ">
+            <div className="flex justify-center items-center mt-16 flex-col-reverse   md:justify-around mb-16  md:mt-24  flex-col md:flex-row ">
                 <div className="flex flex-col w-4/5 flex-col items-center md:items-start md:w-2/5   md:text-left ">
-                    <h1 className="mb-12 ">Hello, I’m <br/> <span className="text-[#6366F1]"> Ayoub EL HYAOUI</span></h1>
-                    <h4>I'm a Freelance UI/UX Designer and Developer based in London, England. I strives to build immersive and beautiful web applications through carefully crafted code and user-centric design</h4>
+                    <p className="text-3xl xxs:text-4xl sm:max-xl:text-5xl xl:text-6xl font-semibold w-full ">Hello, I’m <br/> <span className="text-[#6366F1]"> Ayoub EL HYAOUI</span></p>
+                    <p className=" xxs:text-lg lg:text-[18px] my-6">I'm a Freelance UI/UX Designer and Developer based in London, England. I strives to build immersive and beautiful web applications through carefully crafted code and user-centric design</p>
                 </div>
                 <div>
-                    <img src={MyProfile} className="h-72 mb-8 md:mb-auto md:h-auto drop-shadow-[0_5px_20px_rgba(59,130,246,1)]" />
+                    <img src={MyProfile} className="h-72 mb-8 md:mb-auto md:h-96 lg:h-auto drop-shadow-[0_5px_20px_rgba(59,130,246,1)]" />
                 </div>
             </div>
             <SideMenu open={open}/>

@@ -8,7 +8,7 @@ import Contact from "../components/Contact.jsx"
 
 export default function Home(){
     return(
-       <div className="w-full">
+       <div className="w-full font-mono">
         <Hero/>
         <About/>
         <Skills/>
