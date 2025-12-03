@@ -6,7 +6,7 @@ export default function Skills(){
     return(
 
         <div className="w-full flex flex-col justify-center items-center mt-16">
-            <h1 className=" drop-shadow-[2px_5px_2px_rgba(59,130,246,1)]">My Skills</h1>
+            <h1 className=" font-bold text-2xl md:text-3xl md:mb-4 lg:text-4xl drop-shadow-[2px_5px_2px_rgba(59,130,246,1)]">My Skills</h1>
             <div className="flex flex-col-reverse md:flex-row w-full justify-center items-center">
                 <div className="container relative flex justify-center items-center flex-col raduis-md w-[80%] md:w-[40%] py-[10px] px-[20px]">
                     
@@ -47,9 +47,9 @@ export default function Skills(){
                     </div>
                 
                 </div>
-                <div className="w-[80%] md:w-[40%] p-16 mt-16 md:mt-0 md:ml-16 bg-[#3B82F6] text-[#F8FAFC] rounded-xl shadow-[5px_10px_15px_rgba(0,0,0,0.25)]">
-                    <h1 className="mb-8">Overview</h1>
-                    <p>A snapshot of my core technical skills and the proficiency l've developed through consistent practice and real project experience.</p>
+                <div className="w-[80%] md:w-[40%] p-6 md:p-16 mt-16 md:mt-0 md:ml-16 bg-[#3B82F6] text-[#F8FAFC] rounded-xl shadow-[5px_10px_15px_rgba(0,0,0,0.25)]">
+                    <h1 className="mb-8 text-3xl md:text-4xl  lg:text-5xl">Overview</h1>
+                    <p className="text-sm md:text-base lg:text-lg font-normal">A snapshot of my core technical skills and the proficiency l've developed through consistent practice and real project experience.</p>
                 </div>
             </div>
         </div>
