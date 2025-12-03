@@ -3,7 +3,7 @@ import Hero from "../components/Hero.jsx"
 import Skills from "../components/Skills.jsx"
 import Projects from "../components/Projects.jsx"
 import Contact from "../components/Contact.jsx"
-
+import Footer from "../components/Footer.jsx"
 
 
 export default function Home(){
@@ -14,6 +14,8 @@ export default function Home(){
         <Skills/>
         <Projects/>
         <Contact/>
+        <Footer/>
+
        </div> 
     )
 }

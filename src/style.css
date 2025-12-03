@@ -102,3 +102,40 @@
     transform: translateX(-50%) rotate(45deg)
 }
 
+.animate-spin{
+    animation-name: myAnimation;
+    animation-duration:4s;
+    animation-timing-function:linear;
+    animation-iteration-count:infinite;
+
+}
+
+.animate-spin-rev{
+    animation-name: myAnimationRev;
+    animation-duration:4s;
+    animation-timing-function:linear;
+    animation-iteration-count:infinite;
+
+}
+
+
+@keyframes myAnimation{
+    from{
+        transform:rotate(0deg)
+    }
+    to{
+        transform:rotate(360deg) 
+    }
+
+}
+
+@keyframes myAnimationRev{
+    from{
+        transform:rotate(0deg)
+    }
+    to{
+        transform:rotate(-360deg) 
+    }
+
+}
+
