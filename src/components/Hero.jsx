@@ -65,9 +65,8 @@ export default function Hero(){
                 </div>
                 <div className="">
                     <img src={MyProfile} className="h-72 mb-8 md:mb-auto md:h-96 lg:h-auto drop-shadow-[0_5px_20px_rgba(59,130,246,1)]" />
-                    <img src={gearWhite} className="h-10 h-16 md:h-14 lg:h-16 absolute top-[40%] right-[45%] md:top-[52%
-                    ] md:right-[17%] lg:top-[62%] lg:right-[17%] animate-spin "/>
-                    <img src={gearWhite} className="h-8 md:h-12 lg:h-14 md:h-12 lg:h-14 absolute top-[40%] right-[50%] md:top-[52%] md:right-[22%] lg:top-[62%] lg:right-[21%] animate-spin-rev "/>
+                    <img src={gearWhite} className="h-10 md:h-14 lg:h-16 absolute top-[64%] right-[42%] md:top-[52%] md:right-[17%] lg:top-[62%] lg:right-[17%] animate-spin "/>
+                    <img src={gearWhite} className="h-8 md:h-12 lg:h-14 md:h-12 lg:h-14 absolute top-[64%] right-[50%] md:top-[52%] md:right-[22%] lg:top-[62%] lg:right-[21%] animate-spin-rev "/>
                 </div>
             </div>
             <SideMenu open={open}/>
