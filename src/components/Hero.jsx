@@ -63,10 +63,10 @@ export default function Hero(){
                     <p className="text-3xl xxs:text-4xl sm:max-xl:text-5xl xl:text-6xl font-semibold w-full ">Hello, I’m <br/> <span className="text-[#6366F1]"> Ayoub EL HYAOUI</span></p>
                     <p className=" xxs:text-lg lg:text-[18px] my-6">I'm a Freelance UI/UX Designer and Developer based in London, England. I strives to build immersive and beautiful web applications through carefully crafted code and user-centric design</p>
                 </div>
-                <div className="">
+                <div className="relative">
                     <img src={MyProfile} className="h-72 mb-8 md:mb-auto md:h-96 lg:h-auto drop-shadow-[0_5px_20px_rgba(59,130,246,1)]" />
-                    <img src={gearWhite} className="h-10 md:h-14 lg:h-16 absolute top-[39%] right-[45%] md:top-[52%] md:right-[17%] lg:top-[62%] lg:right-[17%] animate-spin "/>
-                    <img src={gearWhite} className="h-8 md:h-12 lg:h-14 md:h-12 lg:h-14 absolute top-[39%] right-[50%] md:top-[52%] md:right-[22%] lg:top-[62%] lg:right-[21%] animate-spin-rev "/>
+                    <img src={gearWhite} className="h-10 md:h-14 lg:h-16 absolute top-[45%] right-[30%] md:top-[50%] md:right-[28%] lg:top-[52%] lg:right-[33%] animate-spin "/>
+                    <img src={gearWhite} className="h-8 md:h-12 lg:h-14 md:h-12 lg:h-14 absolute top-[45%] right-[50%] md:top-[50%] md:right-[48%] lg:top-[52%] lg:right-[50%] animate-spin-rev "/>
                 </div>
             </div>
             <SideMenu open={open}/>
