@@ -93,7 +93,7 @@ const sendEmail =(e)=>{
                     <div className=" w-[100%] md:w-[80%] flex justify-end items-end">
                         <button 
                             disabled={isDisabled}
-                            style={{background:isDisabled?"gray":"blue" }}
+                            style={{background:isDisabled?"#cccccc":"blue",border:isDisabled?"#999999":"" }}
                             className=" text-white hover:text-white hover:bg-blue-600 hover:scale-105 transition-all duration-300 border border-blue-500 border-1 bg-white "
                             type="submit"
                             

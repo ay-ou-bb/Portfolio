@@ -42,8 +42,8 @@ export default function Navbar(){
 
     return(
         
-        <div className="flex w-full justify-between md:justify-around items-center fixed top-0 pb-4  z-[999] bg-[#0F172A] ">
-            <h3 className="mt-6 basis-1/5 text-[#F8FAFC] font-bold ">{name}</h3>
+        <div className="flex w-full justify-between md:justify-around items-center fixed top-0 pb-4  z-[999] bg-[#0F172A] mr-4  ">
+            <h3 className="mt-6 ml-2 basis-1/5 text-[#F8FAFC] font-bold ">{name}</h3>
             <div className="basis-4/6  p-2 mt-4 bg-[#1E293B]  rounded-md "style={{display :visible ?"none":"block"}} >
                 <ul className="flex justify-around " >
                     <li className="cursor-pointer my-2 "><Link to="home" smooth={true} duration={500}>Home</Link></li>
@@ -53,7 +53,7 @@ export default function Navbar(){
                     <li className="cursor-pointer my-2"><Link to="contact" smooth={true} duration={500} >Contact</Link></li>
                 </ul>
             </div>
-            <div className="  basis-10 flex justify-end items-center  p-0 md:p-6 " style={{display:!visible?"none":"block"}}>
+            <div className=" mr-[-6px] basis-1/6 flex justify-end items-center  p-0 md:p-6 " style={{display:!visible?"none":"block"}}>
                     <FaAlignJustify className="fixed text-white"  style={{display:!open?"block":"none", cursor:"pointer"}}  size={30}  
                     onClick={handleMenuSideOpen}/>
 
