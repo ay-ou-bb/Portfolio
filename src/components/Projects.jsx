@@ -3,7 +3,7 @@ import { LuExternalLink } from "react-icons/lu";
 
 export default function Projects(){
     return(
-        <div className="flex  flex-col mt-24">
+        <div id="project" className="flex  flex-col mt-24">
             <h1 className="font-bold text-2xl md:text-3xl mb-6 md:mb-4 lg:text-4xl drop-shadow-[2px_5px_2px_rgba(59,130,246,1)]">Projects</h1>
             <div className="flex flex-col md:flex-row justify-center items-center md:justify-around">
                 <div className=" w-[80%] mb-12 md:mb-0 md:w-[25%] shadow-[5px_10px_15px_rgba(0,0,0,0.25)] p-4 bg-[#F8FAFC] border border-gray-100  rounded-xl">

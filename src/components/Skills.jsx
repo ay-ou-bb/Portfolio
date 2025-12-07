@@ -5,7 +5,7 @@ export default function Skills(){
     
     return(
 
-        <div className="w-full flex flex-col justify-center items-center mt-16">
+        <div id="skills" className="w-full flex flex-col justify-center items-center mt-24">
             <h1 className=" font-bold text-2xl md:text-3xl md:mb-4 lg:text-4xl drop-shadow-[2px_5px_2px_rgba(59,130,246,1)]">My Skills</h1>
             <div className="flex flex-col-reverse md:flex-row w-full justify-center items-center">
                 <div className="container relative flex justify-center items-center flex-col raduis-md w-[80%] md:w-[40%] py-[10px] px-[20px]">

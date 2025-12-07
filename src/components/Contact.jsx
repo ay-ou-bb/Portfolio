@@ -10,9 +10,14 @@ const sendEmail =(e)=>{
     e.preventDefault();
 
     emailjs.sendForm("service_tfsh2q7" , "template_x3odb0o", form.current , "6cSCTnAkuRJglicUg" )
-    .then(()=>{handelBtnClicked()})
+    .then(()=>{
+        handelBtnClicked()
+    })
 }
+    // <--this is useState for show the popupModal to the user how send message -->
     const [showModal,setShowModal] = useState(false);
+    // <--// this is useState for show the popupModal to the user how send message //-->
+
     const [inputForm, setInputForm] = useState({fullName:"", email:"",message:""})
     const [errorMessage , setErrorMessage ]= useState(null)
 
@@ -26,21 +31,13 @@ const sendEmail =(e)=>{
 
     
      function handelBtnClicked(){
-        // alert("hello world")
-        setShowModal(true)
-        
-        // const {age , phoneNumber} = form;
-        // if(age<18 || age>100){
-        //     setErrorMessage("the age is not allowed")
-        // }else if(phoneNumber.length<10||phoneNumber.length>12){
-        //     setErrorMessage("phone Number Format is incoreect")
-        // }
+            setShowModal(true)
      } 
      
-     
+     console.log(!navigator.onLine)
 
     return(
-        <div className=" flex justify-center items-center  w-full h-full " onClick={handleDivClick}>
+        <div id="contact" className=" flex justify-center items-center  w-full h-full " onClick={handleDivClick}>
             <div className=" mb-16 mt-16  w-[90%]  flex flex-col-reverse md:flex-row-reverse  justify-around items-center border border-gray-400 border-solid p-2 md:p-8">
                 <form
                 ref={form}
@@ -55,6 +52,7 @@ const sendEmail =(e)=>{
                         <input
                         type="text"
                         name="name"
+                        required
                         placeholder="Enter your full name"
                         className="bg-white w-full border border-gray-400 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
                         value={inputForm.fullName}
@@ -67,8 +65,9 @@ const sendEmail =(e)=>{
                     <div className="mb-4 w-[100%] md:w-[80%] flex flex-col items-start ">
                         <lable className=" mb-1 ">E-mail</lable>
                         <input
-                        type="text"
-                         name="email"
+                        type="email"
+                        name="email"
+                        required
                         placeholder="example@mail.com"
                         className="bg-white w-full border border-gray-400 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
                         value={inputForm.email}
