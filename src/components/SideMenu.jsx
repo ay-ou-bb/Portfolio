@@ -3,7 +3,7 @@ import {Link} from "react-scroll"
 export default function SideMenu({open}){
     return (
         <div>
-            <div className={` w-[60%] border-solid border-black border-2 fixed top-14 right-14 bg-[#1E293B] text-[#F8FAFC] p-8  `} style={{display:open?"flex":"none"}}>
+            <div className={` w-[60%] border-solid border-black border-2 fixed top-14 right-14 bg-[#1E293B] text-[#F8FAFC] p-8 transition-[right] ease duration-300   `} style={{right:open?"0":"-60%"}}>
                 <ul className="flex justify-center items-center flex-col w-full">
                       <li className="cursor-pointer my-2 "><Link to="home" smooth={true} duration={500}>Home</Link></li>
                     <hr style={{border:"0,5px solid gray ", width:"90%"}}/>

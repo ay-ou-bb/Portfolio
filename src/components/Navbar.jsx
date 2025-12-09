@@ -46,7 +46,7 @@ export default function Navbar(){
             <h3 className="mt-6 ml-2 basis-1/5 text-[#F8FAFC] font-bold ">{name}</h3>
             <div className="basis-4/6  p-2 mt-4 bg-[#1E293B]  rounded-md "style={{display :visible ?"none":"block"}} >
                 <ul className="flex justify-around " >
-                    <li className="cursor-pointer my-2 "><Link to="home" smooth={true} duration={500}>Home</Link></li>
+                    <li className="cursor-pointer my-2 "><Link offset={-80} to="home" smooth={true} duration={500}>Home</Link></li>
                     <li className="cursor-pointer my-2 "><Link to="about" smooth={true} duration={500} >About</Link></li>
                     <li className="cursor-pointer my-2"><Link to="skills" smooth={true} duration={500} >Skills</Link></li>
                     <li className="cursor-pointer my-2"><Link to="project" smooth={true} duration={500} >Projects</Link></li>

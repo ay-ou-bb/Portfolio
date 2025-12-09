@@ -1,7 +1,11 @@
 import landingPage from "../assets/landingPage.png"
 import { LuExternalLink } from "react-icons/lu";
+import notAvailable  from "../assets/notAvailable.png"
 
 export default function Projects(){
+
+    const isDisabled = true
+
     return(
         <div id="project" className="flex  flex-col mt-24">
             <h1 className="font-bold text-2xl md:text-3xl mb-6 md:mb-4 lg:text-4xl drop-shadow-[2px_5px_2px_rgba(59,130,246,1)]">Projects</h1>
@@ -9,27 +13,27 @@ export default function Projects(){
                 <div className=" w-[80%] mb-12 md:mb-0 md:w-[25%] shadow-[5px_10px_15px_rgba(0,0,0,0.25)] p-4 bg-[#F8FAFC] border border-gray-100  rounded-xl">
                     <img className="border border-gray-200" src={landingPage}/>
                     <div className="p-2 m-2 flex flex-col justify-center items-center">
-                        <h2 className="text-xl md:text-2xl font-bold">TodoList</h2>
-                        <p className="m-2 text-sm md:text-base">this is my todo list to help other to orgaization dealy work</p> 
+                        <h2 className="text-xl md:text-2xl font-bold">not available</h2>
+                        <p className="m-2 text-sm md:text-base">this product is not yet complete</p> 
                         <button className="bg-[#3B82F6] text-white flex justify-between items-center gap-2">Open Link <span><LuExternalLink/></span></button>
                     </div>
                 </div>
 
                <div className=" w-[80%] mb-12 md:mb-0 md:w-[25%] shadow-[5px_10px_15px_rgba(0,0,0,0.25)] p-4 bg-[#F8FAFC] border border-gray-100  rounded-xl">
-                    <img className="border border-gray-200" src={landingPage}/>
+                    <img className="border border-gray-200" src={notAvailable}/>
                     <div className="p-2 m-2 flex flex-col justify-center items-center">
-                        <h2 className="text-xl md:text-2xl font-bold">TodoList</h2>
-                        <p className="m-2 text-sm md:text-base">this is my todo list to help other to orgaization dealy work</p> 
-                        <button className="bg-[#3B82F6] text-white flex justify-between items-center gap-2">Open Link <span><LuExternalLink/></span></button>
+                        <h2 className="text-xl md:text-2xl font-bold">not available</h2>
+                        <p className="m-2 text-sm md:text-base">this product is not yet complete</p> 
+                        <button disabled={isDisabled} style={{background:isDisabled?"#cccccc":"blue"}} className="bg-[#3B82F6] text-white flex justify-between items-center gap-2">Open Link <span><LuExternalLink/></span></button>
                     </div>
                 </div>
 
                 <div className=" w-[80%] mb-12 md:mb-0 md:w-[25%] shadow-[5px_10px_15px_rgba(0,0,0,0.25)] p-4 bg-[#F8FAFC] border border-gray-100  rounded-xl">
-                    <img className="border border-gray-200" src={landingPage}/>
+                    <img className="border border-gray-200" src={notAvailable}/>
                     <div className="p-2 m-2 flex flex-col justify-center items-center">
-                        <h2 className="text-xl md:text-2xl font-bold">TodoList</h2>
-                        <p className="m-2 text-sm md:text-base">this is my todo list to help other to orgaization dealy work</p> 
-                        <button className="bg-[#3B82F6] text-white flex justify-between items-center gap-2">Open Link <span><LuExternalLink/></span></button>
+                        <h2 className="text-xl md:text-2xl font-bold">not available</h2>
+                        <p className="m-2 text-sm md:text-base">this product is not yet complete</p> 
+                        <button  disabled={isDisabled} style={{background:isDisabled?"#cccccc":"blue"}} className="bg-[#3B82F6] text-white flex justify-between items-center gap-2">Open Link <span><LuExternalLink/></span></button>
                     </div>
                 </div>
             </div>

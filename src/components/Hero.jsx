@@ -1,8 +1,8 @@
-
-
-import {useState, useEffect} from "react"
 import MyProfile from "../assets/profilePhoto.png"
 import gearWhite from "../assets/gearWhite.png"
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import InstagramIcon from '@mui/icons-material/Instagram';
 import "../style.css"
 
 
@@ -18,7 +18,19 @@ export default function Hero(){
             <div className="flex justify-center items-center mt-24 flex-col-reverse   md:justify-around mb-16  md:mt-32  flex-col md:flex-row ">
                 <div className="flex flex-col w-4/5 flex-col items-center md:items-start md:w-2/5   md:text-left ">
                     <p className="text-3xl xxs:text-4xl sm:max-xl:text-5xl xl:text-6xl font-semibold w-full ">Hello, I’m <br/> <span className="text-[#6366F1]"> Ayoub EL HYAOUI</span></p>
-                    <p className=" xxs:text-lg lg:text-[18px] my-6">I'm a Freelance UI/UX Designer and Developer based in London, England. I strives to build immersive and beautiful web applications through carefully crafted code and user-centric design</p>
+                    <p className=" xxs:text-lg lg:text-[18px] my-6">I'm a Freelance front-End Developer specializing in building modern, responsive, and intuitive user interfacesusing the latest web technologies</p>
+                    <div className=" w-[40%] flex justify-around items-center">
+                        <a
+                        href="https://www.linkedin.com/in/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >
+                            <LinkedInIcon style={{color:"#0e76a8",fontSize:"60px",cursor:"pointer"}}/>
+                        </a>
+                        <a><InstagramIcon style={{color:"#ee2a7b ",fontSize:"60px",cursor:"pointer"}}/></a>
+                        <a><FacebookIcon style={{color:"#4267B2",fontSize:"60px",cursor:"pointer"}}/></a>
+                        
+                    </div>
                 </div>
                 <div className="relative ">
                     <img src={MyProfile} className="  h-72 mb-8 md:mb-auto md:h-96 lg:h-auto drop-shadow-[0_5px_20px_rgba(59,130,246,1)]" />
