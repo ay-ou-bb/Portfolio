@@ -42,15 +42,17 @@ export default function Navbar(){
 
     return(
         
-        <div className="flex w-full justify-between md:justify-around items-center fixed top-0 pb-4  z-[999] bg-[#0F172A] mr-4  ">
-            <h3 className="mt-6 ml-2 basis-1/5 text-[#F8FAFC] font-bold ">{name}</h3>
-            <div className="basis-4/6  p-2 mt-4 bg-[#1E293B]  rounded-md "style={{display :visible ?"none":"block"}} >
-                <ul className="flex justify-around " >
-                    <li className="cursor-pointer my-2 "><Link offset={-80} to="home" smooth={true} duration={500}>Home</Link></li>
-                    <li className="cursor-pointer my-2 "><Link to="about" smooth={true} duration={500} >About</Link></li>
-                    <li className="cursor-pointer my-2"><Link to="skills" smooth={true} duration={500} >Skills</Link></li>
-                    <li className="cursor-pointer my-2"><Link to="project" smooth={true} duration={500} >Projects</Link></li>
-                    <li className="cursor-pointer my-2"><Link to="contact" smooth={true} duration={500} >Contact</Link></li>
+        <div className="flex w-full justify-between md:justify-around  fixed top-0  pb-4  z-[999] bg-[#0F172A] mr-4  ">
+            <div className=" basis-1/5 flex justify-start">
+            <h3 className="mt-6 ml-2  text-[#6366F1] font-bold ">{name}</h3>
+            </div>
+            <div className="w-[70%]  p-2 mt-4 rounded-md "style={{display :visible ?"none":"block"}} >
+                <ul className="flex justify-around w-[80%] bg-[#1E293B] " >
+                    <li className="cursor-pointer my-2  "><Link className=" text-white hover:text-[#6366F1] font-semibold hover:font-black"offset={-80} to="home" smooth={true} duration={500}>Home</Link></li>
+                    <li className="cursor-pointer my-2 "><Link style={{color:"white", fontWeight:"600"}} to="about" smooth={true} duration={500} >About</Link></li>
+                    <li className="cursor-pointer my-2"><Link style={{color:"white", fontWeight:"600"}} to="skills" smooth={true} duration={500} >Skills</Link></li>
+                    <li className="cursor-pointer my-2"><Link style={{color:"white", fontWeight:"600"}} to="project" smooth={true} duration={500} >Projects</Link></li>
+                    <li className="cursor-pointer my-2"><Link style={{color:"white", fontWeight:"600"}} to="contact" smooth={true} duration={500} >Contact</Link></li>
                 </ul>
             </div>
             <div className=" mr-[-6px] basis-1/6 flex justify-end items-center  p-0 md:p-6 " style={{display:!visible?"none":"block"}}>

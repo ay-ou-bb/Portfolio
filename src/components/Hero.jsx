@@ -3,6 +3,7 @@ import gearWhite from "../assets/gearWhite.png"
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
+import AlternateEmailRoundedIcon from '@mui/icons-material/AlternateEmailRounded';
 import { FaGithub } from "react-icons/fa";
 import "../style.css"
 
@@ -20,7 +21,7 @@ export default function Hero(){
                 <div className="flex flex-col w-4/5 flex-col items-center md:items-start md:w-2/5   md:text-left ">
                     <p className="text-3xl xxs:text-4xl sm:max-xl:text-5xl xl:text-6xl font-semibold w-full ">Hello, I’m <br/> <span className="text-[#6366F1]"> Ayoub EL HYAOUI</span></p>
                     <p className=" xxs:text-lg lg:text-[18px] my-6">I'm a Freelance front-End Developer specializing in building modern, responsive, and intuitive user interfacesusing the latest web technologies</p>
-                    <div className=" w-[40%] flex justify-around items-center">
+                    <div className=" w-[60%] flex justify-around items-center">
                         <a
                         href="https://www.linkedin.com/in/ayoub-el-hyaoui-24953b2b3/"
                         target="_blank"
@@ -28,9 +29,36 @@ export default function Hero(){
                         >
                             <LinkedInIcon style={{color:"#0e76a8",fontSize:"60px",cursor:"pointer"}}/>
                         </a>
-                        <a><InstagramIcon style={{color:"#ee2a7b ",fontSize:"60px",cursor:"pointer"}}/></a>
-                        <a><FacebookIcon style={{color:"#4267B2",fontSize:"60px",cursor:"pointer"}}/></a>
-                        <a><FaGithub /></a>
+
+                         {/* <a
+                            href="https://www.linkedin.com/in/ayoub-el-hyaoui-24953b2b3/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <InstagramIcon style={{color:"#ee2a7b ",fontSize:"60px",cursor:"pointer"}}/>
+                        </a> */}
+
+                         <a
+                            href="https://web.facebook.com/ayo.ub.230749"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >
+                            <FacebookIcon style={{color:"#4267B2",fontSize:"60px",cursor:"pointer"}}/>
+                        </a>
+
+                         <a
+                            href="https://github.com/ay-ou-bb"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >
+                            <FaGithub style={{color:"#4267B2",fontSize:"50px",cursor:"pointer"}} />
+                        </a>
+
+                        <a
+                            href="mailto:ayoubbo3333@gmail.com"
+                            >
+                            <AlternateEmailRoundedIcon style={{color:"#4267B2",fontSize:"50px",cursor:"pointer"}} />
+                        </a>
                         
                     </div>
                 </div>
