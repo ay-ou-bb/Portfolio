@@ -3,6 +3,7 @@ import gearWhite from "../assets/gearWhite.png"
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
+import { FaGithub } from "react-icons/fa";
 import "../style.css"
 
 
@@ -21,7 +22,7 @@ export default function Hero(){
                     <p className=" xxs:text-lg lg:text-[18px] my-6">I'm a Freelance front-End Developer specializing in building modern, responsive, and intuitive user interfacesusing the latest web technologies</p>
                     <div className=" w-[40%] flex justify-around items-center">
                         <a
-                        href="https://www.linkedin.com/in/"
+                        href="https://www.linkedin.com/in/ayoub-el-hyaoui-24953b2b3/"
                         target="_blank"
                         rel="noopener noreferrer"
                         >
@@ -29,6 +30,7 @@ export default function Hero(){
                         </a>
                         <a><InstagramIcon style={{color:"#ee2a7b ",fontSize:"60px",cursor:"pointer"}}/></a>
                         <a><FacebookIcon style={{color:"#4267B2",fontSize:"60px",cursor:"pointer"}}/></a>
+                        <a><FaGithub /></a>
                         
                     </div>
                 </div>
