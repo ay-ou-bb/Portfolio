@@ -2,19 +2,12 @@ import MyProfile from "../assets/profilePhoto.png"
 import gearWhite from "../assets/gearWhite.png"
 import "../style.css"
 
-
-
 export default function Hero(){
-
-    
-   
     return(
-        
         <div id="home" className="z-10 w-full flex justify-center items-center  flex-col bg-[#0F172A] text-white " >
-            
             <div className="flex justify-center items-center mt-24 flex-col-reverse   md:justify-around mb-16  md:mt-32  flex-col md:flex-row ">
                 <div className="flex flex-col w-4/5 flex-col items-center md:items-start md:w-2/5   md:text-left ">
-                    <p className="text-3xl xxs:text-4xl sm:max-xl:text-5xl xl:text-6xl font-semibold w-full ">Hello, I’m <br/> <span className="text-[#6366F1]"> Ayoub EL HYAOUI</span></p>
+                    <p className="text-3xl xxs:text-4xl sm:max-xl:text-5xl xl:text-6xl font-semibold w-full ">Hello, I’m <br/><span className="text-[#6366F1]"> Ayoub DIV</span></p>
                     <p className=" xxs:text-lg lg:text-[18px] my-6">I'm a Freelance front-End Developer specializing in building modern, responsive, and intuitive user interfacesusing the latest web technologies</p>
                    
                 </div>
