@@ -18,13 +18,7 @@ export default function Footer (){
                             <LinkedInIcon  style={{color:"#d1d5db",fontSize:"30px",cursor:"pointer",textColor:"black", borderRadius:"50%"}}/>
                         </a>
 
-                         {/* <a
-                            href="https://www.linkedin.com/in/ayoub-el-hyaoui-24953b2b3/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <InstagramIcon style={{color:"#ee2a7b ",fontSize:"60px",cursor:"pointer"}}/>
-                        </a> */}
+                       
 
                          {/* <a
                             href="https://web.facebook.com/"
