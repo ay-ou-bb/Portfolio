@@ -26,13 +26,13 @@ export default function Footer (){
                             <InstagramIcon style={{color:"#ee2a7b ",fontSize:"60px",cursor:"pointer"}}/>
                         </a> */}
 
-                         <a
-                            href="https://web.facebook.com/ayo.ub.230749"
+                         {/* <a
+                            href="https://web.facebook.com/"
                             target="_blank"
                             rel="noopener noreferrer"
                             >
                             <FacebookIcon style={{color:"#d1d5db",fontSize:"30px",cursor:"pointer",textColor:"black", borderRadius:"50%"}}/>
-                        </a>
+                        </a> */}
 
                          <a
                             href="https://github.com/ay-ou-bb"
