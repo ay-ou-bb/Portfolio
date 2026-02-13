@@ -1,0 +1,14 @@
+{
+    "navbar": {
+        "Home": "Home",
+        "About": "About Me",
+        "Skills": "Skills",
+        "Projects": "Projects",
+        "Contact": "Contact Us"
+    },
+    "hero":{
+        "hello":"Hello, I'm",
+        "name":"Ayoub Div",
+        "description":"I'm a Freelance front-End Developer specializing in building modern, responsive, and intuitive user interfaces using the latest web technologies"
+    }
+}
