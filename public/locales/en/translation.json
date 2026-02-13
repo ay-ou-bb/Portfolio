@@ -10,5 +10,11 @@
         "hello":"Hello, I'm",
         "name":"Ayoub Div",
         "description":"I'm a Freelance front-End Developer specializing in building modern, responsive, and intuitive user interfaces using the latest web technologies"
+    },
+     "about":{
+         "title":"I am front-End Devceloper",
+         "description1":"i'm a front-End Devceloper passionte about building clean, responsive, and user-friendly web interfaces. i enjoy turning ideas into real, functional designs using modern tools and best practices. I work with HTML, CSS, JavaScript, tailwind CSS, and React to Create fast and intuitive experiences that look great on all devices. I'm always learning and improving to deliver better, more polished work.",
+         "description2":"I design and develop services for customers specializing creating stylish, modern websites, web services."  
     }
 }
+

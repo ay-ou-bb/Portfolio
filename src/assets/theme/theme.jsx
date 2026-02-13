@@ -9,7 +9,8 @@ const theme = createTheme ({
     },
     secondary:{
         main:purple[900],
-        light:purple[100]
+        light:purple[100],
+        dark:purple[400],
     },
   },
 });

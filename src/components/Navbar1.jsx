@@ -29,6 +29,7 @@ const settings = ['Arabic', 'English'];
 function Navbar1() {
 
   const { t, i18n } = useTranslation();
+  const isAr = i18n.language ==="ar";
 
 
 
@@ -86,7 +87,7 @@ function Navbar1() {
             component="a"
             href="#app-bar-with-responsive-menu"
             sx={{
-              mr: 4,
+              mx: 5,
               display: { xs: 'none', md: 'flex' },
               fontFamily: 'monospace',
               fontWeight: 700,
@@ -163,9 +164,9 @@ function Navbar1() {
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2,mr:2, color: 'white', display: 'block' }}
+                sx={{ my: 2,mr:3, color: 'white', display: 'block',fontSize:isAr?"large":"small" }}
               >
-                <Link className="hover:text-gray-100 text-gray-300 font-bold"  offset={-80} to={page.toLowerCase()} smooth={true} duration={500}>{t(`navbar.${page}`)}</Link>
+                <Link  className="hover:text-gray-100 text-gray-300 font-bold"  offset={-80} to={page.toLowerCase()} smooth={true} duration={500}>{t(`navbar.${page}`)}</Link>
                 
               </Button>
             ))}
