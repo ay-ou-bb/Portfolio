@@ -30,6 +30,17 @@
         "weather":"Weather app",
         "weather_desc":"check the weaher every day",
         "open":"Open Link"
+    },
+    "contact":{
+        "contact":"Contact us",
+        "name":"Full Name",
+        "email":"E-mail",
+        "message":"Message",
+        "description":"fell free to reach out if you have a project in mind, a question about my work, or simply want to connect. I'm always open to discussing new ideas and opportunities"
+    },
+    "popup":{
+        "message":"Your messaage has been sent!",
+        "success":"Success"
     }
 }
 

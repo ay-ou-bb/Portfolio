@@ -10,8 +10,6 @@ import Button from '@mui/material/Button';
 
 
 export default function Projects(){
-
-    const isDisabled = true
      const { t, i18n } = useTranslation();
      const theme = useTheme()
 
