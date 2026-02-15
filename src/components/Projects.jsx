@@ -45,11 +45,10 @@ export default function Projects(){
 
             <div className="flex justify-center">
                 <div className="sm:w-[70%] md:w-[90%] grid grid-cols-1 md:grid-cols-3 gap-4">
-
             {/* PROJECTS */}
             {projectsArray.map((project)=>{
                 return(
-                    <div key={project.id} className="h-96 flex justify-center flex-col items-center mb-12 md:mb-0 shadow-[5px_10px_15px_rgba(0,0,0,0.25)] p-2 bg-[#F8FAFC] border border-gray-100  rounded-xl">
+                    <div key={project.id} className="sm:w-[80%] md:w-auto h-96 flex justify-center flex-col items-center mb-12 md:mb-0 shadow-[5px_10px_15px_rgba(0,0,0,0.25)] p-2 bg-[#F8FAFC] border border-gray-100  rounded-xl">
                         <img style={{border:`${theme.palette.primary.light} solid 3px`}} className="h-[50%] w-[90%] border border-gray-200" src={project.img}/>
                         <div className="h-[45%] m-2 grid grid-rows-2 gap-4">
                            <div className=" mt-4 h-"> 
