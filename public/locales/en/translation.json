@@ -20,6 +20,16 @@
         "title":"Skills",
         "Overview":"Overview",
         "description":"A snapshot of my core technical skills and the proficiency l've developed through consistent practice and real project experience."
+    },
+     "projects":{
+        "title":"Projects",
+        "Physiotherapy":"physiotherapy",
+        "physiotherapy_desc":"improving the quality of life",
+        "todo":"Todo List",
+        "todo_desc":"helping you to organize your day",
+        "weather":"Weather app",
+        "weather_desc":"check the weaher every day",
+        "open":"Open Link"
     }
 }
 
