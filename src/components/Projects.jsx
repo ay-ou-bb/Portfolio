@@ -41,7 +41,7 @@ export default function Projects(){
 
      return(
         <RevealOnScroll>
-        <div id="projects" className="flex   flex-col mt-24">
+        <div id="projects" className="flex   flex-col mb-16">
             <h1 style={{color:theme.palette.secondary.dark,}} className="font-bold text-center text-2xl md:text-3xl mb-6 md:mb-12 lg:text-4xl drop-shadow-[2px_5px_2px_rgba(59,130,246,1)]">{t("projects.title")}</h1>
             
             {/* <div className="flex flex-col md:flex-row justify-center items-center md:justify-around"> */}

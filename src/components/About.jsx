@@ -35,7 +35,7 @@ useEffect(()=>{
 
     return(
          <RevealOnScroll>
-            <div id="about" className="relative flex justify-center items-center ">
+            <div id="about" className="relative flex justify-center items-center  mb-16">
                 <div className=" flex max-md:flex-col justify-center md:justify-around items-center gap-6 my-24 w-5/6 p-6 md:p-16 shadow-2xl">
                     <div >
                         <img src={visible?imageAbout:aboutImageSmal} className="h-[40%] w-full md:w-auto sm:h-[60%] mb-8 md:mb-auto md:h-80 lg:h-auto drop-shadow-[0_5px_20px_rgba(59,130,246,1)]"/>
