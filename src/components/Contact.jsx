@@ -4,6 +4,8 @@ import PopupContact from "../components/PopupContacte.jsx"
 import Button from '@mui/material/Button';
 import { useTranslation } from 'react-i18next'
 
+import RevealOnScroll from '../assets/animations/RevealOnScroll.jsx';
+
 
 export default function Projects(){
 
@@ -40,6 +42,7 @@ export default function Projects(){
      console.log(!navigator.onLine)
 
     return(
+        <RevealOnScroll>
         <div id="contact" className="text-black flex justify-center items-center  w-full h-full " onClick={handleDivClick}>
             <div className=" mb-16 mt-16  w-[90%]  flex flex-col-reverse md:flex-row-reverse  justify-around items-center border border-gray-400 border-solid p-2 md:p-8">
                 <form
@@ -111,5 +114,6 @@ export default function Projects(){
                 </div>
             </div>
         </div>
+        </RevealOnScroll>
     )
 }

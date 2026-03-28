@@ -3,12 +3,14 @@ import "../style.css"
 import { useTranslation } from 'react-i18next'
 import {useTheme} from '@mui/material/styles';
 
+import RevealOnScroll from '../assets/animations/RevealOnScroll.jsx';
+
 export default function Skills(){
     const { t, i18n } = useTranslation();
      const theme = useTheme()
     
     return(
-
+     <RevealOnScroll>
         <div id="skills" className="w-full flex flex-col justify-center items-center mt-16">
             <h1 style={{color:theme.palette.secondary.dark,}} className=" font-bold text-2xl md:text-3xl mb-6 md:mb-12 lg:text-4xl drop-shadow-[2px_5px_2px_rgba(59,130,246,1)]">{t("skills.title")}</h1>
             <div className="flex flex-col-reverse md:flex-row w-full justify-center items-center">
@@ -56,5 +58,6 @@ export default function Skills(){
                 </div>
             </div>
         </div>
+         </RevealOnScroll>
     )
 }

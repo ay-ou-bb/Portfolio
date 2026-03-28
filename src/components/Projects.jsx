@@ -7,6 +7,8 @@ import { useTranslation } from 'react-i18next'
 import {useTheme} from '@mui/material/styles';
 import Button from '@mui/material/Button';
 
+import RevealOnScroll from '../assets/animations/RevealOnScroll.jsx';
+
 
 
 export default function Projects(){
@@ -38,6 +40,7 @@ export default function Projects(){
      ]
 
      return(
+        <RevealOnScroll>
         <div id="projects" className="flex   flex-col mt-24">
             <h1 style={{color:theme.palette.secondary.dark,}} className="font-bold text-center text-2xl md:text-3xl mb-6 md:mb-12 lg:text-4xl drop-shadow-[2px_5px_2px_rgba(59,130,246,1)]">{t("projects.title")}</h1>
             
@@ -69,6 +72,7 @@ export default function Projects(){
                 </div>
             </div>
         </div>
+        </RevealOnScroll>
     )
 }
 
