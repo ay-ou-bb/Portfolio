@@ -21,6 +21,10 @@
         "Overview":"Overview",
         "description":"A snapshot of my core technical skills and the proficiency l've developed through consistent practice and real project experience."
     },
+     "certificates":{
+        "title":"Certificates",
+        "Overview":"Overview"
+    },
      "projects":{
         "title":"Projects",
         "Physiotherapy":"physiotherapy",
