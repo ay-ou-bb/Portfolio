@@ -22,7 +22,7 @@ export default function Hero(){
     const theme = useTheme()
     return(
         <RevealOnScroll>
-            <Container maxWidth={false} sx={{backgroundColor:theme=>theme.palette.primary.light}}  id="home" className="z-10 w-full flex justify-center items-center  flex-col  text-white mb-16 ">
+            <Container maxWidth={false} sx={{backgroundColor:theme=>theme.palette.primary.light}}  id="home" className="z-10 w-full flex justify-center items-center  flex-col  text-white mb-16 mb:mb-24">
                 <div  className="flex justify-cente items-center mt-20 flex-col-reverse md:justify-around mb-16 md:mt-26 flex-col md:flex-row ">
                     {/* CONTAIN THE NAME AND DESCRIPTION  */}
                     <div  className=" w-4/5 md:w-[58%]">

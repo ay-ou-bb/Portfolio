@@ -17,7 +17,7 @@ export default function Home(){
 
     return(
         <ThemeProvider theme={theme}>
-             <div className="w-full font-mono">
+             <div className="w-full font-mono ">
                 <Navbar1/> 
                 <Hero/>
                 <About/>
