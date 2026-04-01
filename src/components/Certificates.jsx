@@ -1,7 +1,8 @@
 import introductionFrontEnd  from "../assets/img/certificates/introductionFrontEnd.jpg"
 import { useTranslation } from 'react-i18next'
 import {useTheme} from '@mui/material/styles';
-
+import Button from '@mui/material/Button';
+import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 import RevealOnScroll from '../assets/animations/RevealOnScroll.jsx';
 
 
@@ -17,10 +18,26 @@ export default function Certificates (){
                         <div class="md:flex-shrink-0">
                             <img class="h-64 w-full object-cover md:h-full md:w-64" src={introductionFrontEnd} alt="introduction to front-end developement"/>
                         </div>
-                        <div class="p-8">
-                            <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Case study</div>
-                            <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">Finding customers for your new business</a>
-                            <p class="mt-2 text-gray-500">Getting a new business off the ground is a lot of hard work. Here are five ideas you can use to find your first customers.</p>
+                        <div class="p-8 w-full">
+                            <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">{t("certificates.name")}</div>
+                            <p class="mt-2 text-gray-500">{t("certificates.overview")}.</p>
+                            <div class="flex w-full justify-end items-end">
+                                <Button className="flex justify-around items-center !mt-4"
+                                sx={{ 
+                                    '&:hover': { 
+                                    backgroundColor: 'primary.main', 
+                                    color: 'white',
+                                    border: 'none' 
+                                    } 
+                                }} 
+                                    href="https://coursera.org/share/b5f682cb35cd352efc80cc24b306e2d7"
+                                    variant="outlined"
+                                    endIcon={<OpenInNewIcon className="mr-2" />}>
+                                    {t("certificates.open")}
+                                </Button>
+                            </div>
+                            
+                            
                         </div>
                     </div>
                 </RevealOnScroll>

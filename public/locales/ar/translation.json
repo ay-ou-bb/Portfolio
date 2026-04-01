@@ -23,8 +23,11 @@
     },
     "certificates":{
         "title":"الشهادات",
-        "Overview":"نظرة عامة"
-    },
+        "name" :"مقدمة في تطوير واجهات المستخدم",
+        "overview":"تخصص اساسيات تطوير الويب من ميتا",
+        "url":"https://coursera.org/share/b5f682cb35cd352efc80cc24b306e2d7",
+        "open":"افتح الرابط"
+       },
     "projects":{
         "title":"المشاريع",
         "Physiotherapy":"العلاج الطبيعي",
