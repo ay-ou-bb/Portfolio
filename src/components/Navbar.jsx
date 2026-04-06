@@ -23,7 +23,7 @@ import { useTranslation } from 'react-i18next';
 
 
 
-const pages = ['Home','About', 'Skills', 'Projects','Contact'];
+const pages = ['Home','About', 'Skills',"Certificates", 'Projects','Contact'];
 const settings = ['Arabic', 'English'];
 
 function Navbar1() {
@@ -79,7 +79,7 @@ function Navbar1() {
   return (
     <AppBar position="sticky" color="primary">
       <Container maxWidth="xl" >
-        <Toolbar disableGutters>
+        <Toolbar disableGutters > 
           <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
           <Typography
             variant="h6"
@@ -87,7 +87,7 @@ function Navbar1() {
             component="a"
             href="#app-bar-with-responsive-menu"
             sx={{
-              mx: 5,
+              mx: 3,
               display: { xs: 'none', md: 'flex' },
               fontFamily: 'monospace',
               fontWeight: 700,
@@ -158,13 +158,12 @@ function Navbar1() {
           </Typography>
 
           {/* navebar items */}
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }} className="justify-center items-center">
             {pages.map((page) => (
-              
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2,mr:3, color: 'white', display: 'block',fontSize:isAr?"large":"small" }}
+                sx={{ my: 2,mr:2, color: 'white', display: 'block',fontSize:isAr?"large":"12px" }}
               >
                 <Link  className="hover:text-gray-100 text-gray-300 font-bold"  offset={-80} to={page.toLowerCase()} smooth={true} duration={500}>{t(`navbar.${page}`)}</Link>
                 

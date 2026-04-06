@@ -11,7 +11,7 @@ export default function Certificates (){
      const theme = useTheme()
     return (
         <>
-            <div class=" mx-auto bg-white rounded-xl shadow-md overflow-hidden w-[80%] max-w-5xl mb-16 md:mb-24">
+            <div id="certificates" class=" mx-auto bg-white rounded-xl shadow-md overflow-hidden w-[80%] max-w-5xl mb-16 md:mb-24">
                 <h1 style={{color:theme.palette.secondary.dark,}} className="font-bold text-center text-2xl md:text-3xl mb-6 md:mb-12 lg:text-4xl drop-shadow-[2px_5px_2px_rgba(59,130,246,1)]">{t("certificates.title")}</h1>
                 <RevealOnScroll>
                     <div class="md:flex">

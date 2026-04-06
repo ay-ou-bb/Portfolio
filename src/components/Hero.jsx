@@ -1,7 +1,9 @@
 // IMAGE
-import MyProfile from "../assets/img/undraw_hero.png"
+
 // import MyProfile from "../assets/img/profilePhoto.png"
 // import gearWhite from "../assets/img/gearWhite.png"
+import HeroRight from "../assets/img/HeroRight.png"
+import HeroLeft from "../assets/img/HeroLeft.png"
  import "../style.css"
 // ANIMATION
 import BlurText from "../assets/animations/BlurText.jsx";
@@ -18,6 +20,7 @@ import RevealOnScroll from '../assets/animations/RevealOnScroll.jsx';
 export default function Hero(){
 
     const { t, i18n } = useTranslation();
+     const isAr = i18n.language ==="ar";
     
 
     const theme = useTheme()
@@ -60,9 +63,7 @@ export default function Hero(){
 
                     {/* CONTAIN THE THE IMAGE AND IMAGE OF ANIMATION  */}
                     <div className="relative ">
-                        <div className="mx-8 w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80 border border-white border-solid rounded-full">
-
-                        </div>
+                        <img src={isAr?HeroLeft:HeroRight} className="w-[150px] md:w-96 lg:w-[700px]"/>
                     </div>
                     {/*===== CONTAIN THE THE IMAGE AND IMAGE OF ANIMATION ========*/}
                 </div>            
