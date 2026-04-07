@@ -1,7 +1,4 @@
-// IMAGE
 
-// import MyProfile from "../assets/img/profilePhoto.png"
-// import gearWhite from "../assets/img/gearWhite.png"
 import HeroRight from "../assets/img/HeroRight.png"
 import HeroLeft from "../assets/img/HeroLeft.png"
  import "../style.css"
@@ -11,6 +8,13 @@ import SplitText from '../assets/animations/SplitText.jsx';
 // MATERIAL UI
 import Container from '@mui/material/Container';
 import {useTheme} from '@mui/material/styles';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import MailOutlineIcon from '@mui/icons-material/MailOutline';
+import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
+import Button from '@mui/material/Button';
+
+import {Link} from "react-scroll";
 
 // translation
 import { useTranslation } from 'react-i18next'
@@ -36,7 +40,7 @@ export default function Hero(){
                             <div style={{color:theme.palette.secondary.main}} className="w-full items-center flex justify-center md:justify-start m">                          
                                 <SplitText
                                     text={t("hero.name")}
-                                    className="text-[2.2rem]  sm:text-5xl md:text-6xl font-semibold "
+                                    className="text-5xl md:text-7xl font-bold text-gray-900"
                                     delay={50}
                                     duration={1.25}
                                     ease="power3.out"
@@ -58,6 +62,47 @@ export default function Hero(){
                                 className="text-[18px] sm:text-xl md:text-2xl lg:text-3xl mb-8 text-center flex justify-center items-center md:justify-start "
                             />
                         </div> 
+                        
+                         <div className="flex flex-wrap gap-4 justify-center items-center">
+                             <Link className=" text-black hover:text-[#6366F1] font-semibold"offset={-80} to="projects" smooth={true} duration={500}>
+                                <Button variant="contained" size="lg" className="gap-2">
+                                    View My Work
+                                    <ArrowRightAltIcon className="w-4 h-4" />
+                                </Button>
+                            </Link>
+                            <Link className=" text-black hover:text-[#6366F1] font-semibold"offset={-80} to="contact" smooth={true} duration={500}>
+                                <Button variant="outline" size="lg" className="gap-2  !border !border-white">
+                                    <MailOutlineIcon className="w-4 h-4" />
+                                    Contact Me
+                                </Button>
+                            </Link>
+                           
+                        </div>
+
+                         <div className="flex gap-4 justify-center pt-4">
+                            <a
+                                href="https://github.com/ay-ou-bb"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="p-3 bg-white rounded-full shadow-md hover:shadow-lg transition-shadow hover:scale-110 transition-transform"
+                            >
+                                <GitHubIcon className="w-6 h-6 text-gray-700" />
+                            </a>
+                            <a
+                                href="https://www.linkedin.com/in/ayoub-el-hyaoui-24953b2b3/"
+                                target="_blank"
+                                            rel="noopener noreferrer"
+                                className="p-3 bg-white rounded-full shadow-md hover:shadow-lg transition-shadow hover:scale-110 transition-transform"
+                            >
+                                <LinkedInIcon className="w-6 h-6 text-blue-600" />
+                            </a>
+                            <a
+                                href="mailto:ayoubbo3333@gmail.com"
+                                className="p-3 bg-white rounded-full shadow-md hover:shadow-lg transition-shadow hover:scale-110 transition-transform"
+                            >
+                                <MailOutlineIcon className="w-6 h-6 text-gray-700" />
+                            </a>    
+                        </div>
                     </div>
                     {/*===== CONTAIN THE NAME AND DESCRIPTION  ====*/}
 
