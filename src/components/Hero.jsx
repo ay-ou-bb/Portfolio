@@ -71,7 +71,7 @@ export default function Hero(){
                                 </Button>
                             </Link>
                             <Link className=" text-black hover:text-[#6366F1] font-semibold"offset={-80} to="contact" smooth={true} duration={500}>
-                                <Button variant="outline" size="lg" className="gap-2  !border !border-white">
+                                <Button variant="outline" size="lg" className="gap-2  !border !border-white !text-white">
                                     <MailOutlineIcon className="w-4 h-4" />
                                     Contact Me
                                 </Button>

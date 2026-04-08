@@ -77,13 +77,7 @@ useEffect(()=>{
                                 <SchoolIcon className="w-8 h-8 text-orange-600" />
                             </div>
                             <h3 className="text-3xl font-bold text-gray-900 mb-2">1+</h3>
-                            <p className="text-gray-600">Certifications</p>
-=======
-                            <div className="inline-flex p-4 bg-purple-100 rounded-full mb-4">
-                                <SchoolIcon className="w-8 h-8 text-purple-600" />
-                            </div>
-                            <h3 className="text-3xl font-bold text-gray-900 mb-2">100%</h3>
-                            <p className="text-gray-600">Client Satisfaction</p>
+                            <p className="text-gray-600">Certifications</p>                            
                         </div>
                     </div>
 
