@@ -110,7 +110,7 @@ export default function Hero(){
                     <div className="relative ">
                         <img src={isAr?HeroLeft:HeroRight} className="w-[150px] md:w-96 lg:w-[700px]"/>
                     </div>
-                    {/*===== CONTAIN THE THE IMAGE AND IMAGE OF ANIMATION ========*/}
+                    {/*===== CONTAIN THE THE IMAGE AND IMAGE OF ANIMATION HE ========*/}
                 </div>            
             </Container>
         </RevealOnScroll>
