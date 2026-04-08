@@ -1,7 +1,6 @@
 
 import HeroRight from "../assets/img/HeroRight.png"
 import HeroLeft from "../assets/img/HeroLeft.png"
- import "../style.css"
 // ANIMATION
 import BlurText from "../assets/animations/BlurText.jsx";
 import SplitText from '../assets/animations/SplitText.jsx';
@@ -108,7 +107,7 @@ export default function Hero(){
 
                     {/* CONTAIN THE THE IMAGE AND IMAGE OF ANIMATION  */}
                     <div className="relative ">
-                        <img src={isAr?HeroLeft:HeroRight} className="w-[150px] md:w-96 lg:w-[700px]"/>
+                        <img src={isAr?HeroLeft:HeroRight} className="w-[150px] md:w-[500px] lg:w-[700px] mt-[-50px]"/>
                     </div>
                     {/*===== CONTAIN THE THE IMAGE AND IMAGE OF ANIMATION HE ========*/}
                 </div>            

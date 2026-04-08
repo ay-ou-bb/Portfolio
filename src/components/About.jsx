@@ -81,7 +81,7 @@ useEffect(()=>{
                         </div>
                     </div>
 
-                    <div className="text-center space-y-4 mb-16">
+                    <div className="text-center space-y-4  bg-white p-6 md:p-0 flex justify-center items-center  rounded-xl shadow-md md:h-full mx-1">
                         <div style={{fontWeight:isAr?"bold":"normal"}} className=" w-full text-xs sm:text-sm md:text-base lg:text-lg font-normal flex justify-center items-center flex-col text-gray-600"><p>{t("about.description1")}</p><p className="mt-3">{t("about.description2")}</p></div>
                     </div>
                 </div>
