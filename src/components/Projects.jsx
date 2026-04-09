@@ -77,9 +77,9 @@ export default function Projects(){
 
                                 <div className="p-6 space-y-4">
                                     <h3 className="text-xl font-semibold text-gray-900">
-                                    {project.nameKey}
+                                    {t(`projects.${project.nameKey}`)}
                                     </h3>
-                                    <p className="text-gray-600 text-sm">{project.descKey}</p>
+                                    <p className="text-gray-600 text-sm">{t(`projects.${project.descKey}`)}</p>
 
                                     <div className="flex flex-wrap gap-2">
                                     {project.technologies.map((tech) => (
