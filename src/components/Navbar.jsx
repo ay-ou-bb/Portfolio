@@ -80,7 +80,7 @@ function Navbar1() {
       <Container maxWidth="xl" >
         <Toolbar disableGutters > 
           <Typography
-            variant="h6"
+            variant="h7"
             noWrap
             component="a"
             href="#app-bar-with-responsive-menu"
@@ -92,11 +92,12 @@ function Navbar1() {
               letterSpacing: '.3rem',
               color: 'inherit',
               textDecoration: 'none',
+              
             }}
              
           >
             {decoration}
-            
+  
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -136,7 +137,7 @@ function Navbar1() {
           </Box>
          
           <Typography
-            variant="h5"
+            variant="h6"
             noWrap
             component="a"
             href="#app-bar-with-responsive-menu"

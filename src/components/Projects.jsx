@@ -7,6 +7,8 @@ import { useTranslation } from 'react-i18next'
 import {useTheme} from '@mui/material/styles';
 import Button from '@mui/material/Button';
 
+import GitHubIcon from '@mui/icons-material/GitHub';
+
 import RevealOnScroll from '../assets/animations/RevealOnScroll.jsx';
 
 
@@ -21,21 +23,27 @@ export default function Projects(){
             img:landingPage,
             nameKey:"Physiotherapy",
             descKey:"physiotherapy_desc",
-            link:"https://ay-ou-bb.github.io/Physiotherapy/"
+            link:"https://ay-ou-bb.github.io/Physiotherapy/",
+            technologies: ["Html", "CSS", "JavaScript"],
+            gitHubLink:"https://github.com/ay-ou-bb/Physiotherapy.git"
         },
         {
             id:2,
             img:todoList,
             nameKey:"todo",
             descKey:"todo_desc",
-            link:"https://todo-list-dv.netlify.app/"
+            link:"https://todo-list-dv.netlify.app/",
+            technologies: ["React.js", "MUI"],
+            gitHubLink:"https://github.com/ay-ou-bb/Todo-List.git"
         },
         {
             id:3,
             img:weatherApp,
             nameKey:"weather",
             descKey:"weather_desc",
-            link:"https://weather-app-devl.netlify.app/"
+            link:"https://weather-app-devl.netlify.app/",
+            technologies: ["React.js", "MUI", "axios "],
+            gitHubLink:"https://github.com/ay-ou-bb/Weather-app.git"
         }
      ]
 
@@ -49,23 +57,56 @@ export default function Projects(){
             <div className="flex justify-center items-center w-full">
                 <div className="sm:w-[80%] md:w-[90%] grid grid-cols-1 md:grid-cols-3 gap-4 ">
             {/* PROJECTS */}
+
+
             {projectsArray.map((project)=>{
                 return(
                     <RevealOnScroll>
-                        <div key={project.id} className="sm:w-[80%] md:w-auto h-96 flex justify-center flex-col items-center mb-12 md:mb-0 shadow-[5px_10px_15px_rgba(0,0,0,0.25)] p-2 bg-[#F8FAFC] border border-gray-100  rounded-xl">
-                            <img style={{border:`${theme.palette.primary.light} solid 3px`}} className="h-[50%] w-[90%] border border-gray-200" src={project.img}/>
-                            <div className="h-[45%] m-2 grid grid-rows-2 gap-4">
-                            <div className=" mt-4 h-"> 
-                                    <h2 style={{color:theme.palette.primary.light}} className="text-xl md:text-2xl font-bold text-center">{t(`projects.${project.nameKey}`)}</h2>
-                                    <p className="text-black m-2 text-sm md:text-base text-center">{t(`projects.${project.descKey}`)}</p> 
+                        <section>
+                            <div
+                                key={project.id}
+                                className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow group"
+                                >
+
+                                <div className="relative h-48 overflow-hidden">
+                                    <img
+                                        src={project.img}
+                                        alt={project.nameKey}
+                                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                                    />
+                                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
                                 </div>
-                                <div className="flex justify-center items-center">
-                                    <Button className="flex justify-around items-center mb-4" href={project.link} variant="contained" endIcon={<OpenInNewIcon className="mr-2" />}>
-                                        {t("projects.open")}
-                                    </Button>
-                                </div>                            
+
+                                <div className="p-6 space-y-4">
+                                    <h3 className="text-xl font-semibold text-gray-900">
+                                    {project.nameKey}
+                                    </h3>
+                                    <p className="text-gray-600 text-sm">{project.descKey}</p>
+
+                                    <div className="flex flex-wrap gap-2">
+                                    {project.technologies.map((tech) => (
+                                        <span
+                                        key={tech}
+                                        className="px-3 py-1 bg-blue-50 text-blue-700 text-xs rounded-full font-medium"
+                                        >
+                                        {tech}
+                                        </span>
+                                    ))}
+                                    </div>
+
+                                    <div className="flex gap-3 pt-2">
+                                        <Button variant="outline" size="sm" className="gap-2 flex-1 !border !border-black !text-black !text-xs !p-1 !m-0 hover:!bg-purple-100">
+                                            <GitHubIcon className="" />
+                                           <a href={project.gitHubLink}>code</a> 
+                                        </Button>
+                                        <Button size="sm" className="gap-2 flex-1 !text-xs !p-1 !m-0 hover:!bg-purple-100 !bg-purple-50">
+                                            <OpenInNewIcon className="w-4 h-4" />
+                                           <a href={project.link}>Live Demo</a> 
+                                        </Button>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
+                        </section>
                      </RevealOnScroll>
                 )
             })}
