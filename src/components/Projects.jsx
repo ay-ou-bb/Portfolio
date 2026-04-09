@@ -55,7 +55,7 @@ export default function Projects(){
             {/* <div className="flex flex-col md:flex-row justify-center items-center md:justify-around"> */}
 
             <div className="flex justify-center items-center w-full">
-                <div className="sm:w-[80%] md:w-[90%] grid grid-cols-1 md:grid-cols-3 gap-4 ">
+                <div className="sm:w-[80%] md:w-[90%] grid grid-cols-1 md:grid-cols-3 gap-4 mx-6 md:m-0 ">
             {/* PROJECTS */}
 
 
@@ -63,7 +63,7 @@ export default function Projects(){
                 return(
                     <RevealOnScroll key={project.id}>
                             <div 
-                                className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow group"
+                                className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow group "
                                 >
 
                                 <div className="relative h-48 overflow-hidden">
