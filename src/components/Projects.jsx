@@ -61,10 +61,8 @@ export default function Projects(){
 
             {projectsArray.map((project)=>{
                 return(
-                    <RevealOnScroll>
-                        <section>
-                            <div
-                                key={project.id}
+                    <RevealOnScroll key={project.id}>
+                            <div 
                                 className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow group"
                                 >
 
@@ -106,7 +104,6 @@ export default function Projects(){
                                     </div>
                                 </div>
                             </div>
-                        </section>
                      </RevealOnScroll>
                 )
             })}

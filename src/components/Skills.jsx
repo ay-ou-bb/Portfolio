@@ -59,10 +59,10 @@ export default function Skills(){
                 <div className="grid md:grid-cols-2 gap-6 border border-purple-600 rounded-xl shadow-[5px_10px_15px_rgba(0,0,0,0.25)]">
                     <div className="container relative flex justify-center items-center flex-col raduis-md w-full py-[10px] px-[20px]">
 
-                    {skills.map((skill)=>{
+                    {skills.map((skill,index)=>{
                         const Icon = skill.icon;
                         return(
-                        <div className="w-full my-2">
+                        <div key={index} className="w-full my-2">
                             <div className="flex">
                                 <span className={`title block text-base font-semibold w-8 h-8 p-1 rounded-lg ${skill.color}`}><Icon/></span>
                                 <h3 className="font-semibold text-lg text-gray-900 mx-2">{skill.name}</h3>
