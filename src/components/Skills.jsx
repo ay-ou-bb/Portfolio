@@ -53,7 +53,7 @@ export default function Skills(){
     ]
     
     return(
-        <div id="skills" className="w-full flex flex-col justify-center items-center mb-16 md:mb-24">
+        <div id="skills" className=" flex flex-col justify-center mx-2 items-center mb-16 md:mb-24">
             <h1 style={{color:theme.palette.secondary.dark,}} className=" font-bold text-2xl md:text-3xl  lg:text-4xl drop-shadow-[2px_5px_2px_rgba(59,130,246,1)] mb-6 md:mb-12">{t("skills.title")}</h1>
             <RevealOnScroll>
                 <div className="grid md:grid-cols-2 gap-6 border border-purple-600 rounded-xl shadow-[5px_10px_15px_rgba(0,0,0,0.25)]">
@@ -62,7 +62,7 @@ export default function Skills(){
                     {skills.map((skill)=>{
                         const Icon = skill.icon;
                         return(
-                        <div className="w-full my-4">
+                        <div className="w-full my-2">
                             <div className="flex">
                                 <span className={`title block text-base font-semibold w-8 h-8 p-1 rounded-lg ${skill.color}`}><Icon/></span>
                                 <h3 className="font-semibold text-lg text-gray-900 mx-2">{skill.name}</h3>
