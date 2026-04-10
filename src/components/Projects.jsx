@@ -55,7 +55,7 @@ export default function Projects(){
             {/* <div className="flex flex-col md:flex-row justify-center items-center md:justify-around"> */}
 
             <div className="flex justify-center items-center w-full">
-                <div className="sm:w-[80%] md:w-[90%] grid grid-cols-1 md:grid-cols-3 gap-4 mx-6 md:m-0 ">
+                <div className="sm:w-[80%] md:w-[90%] grid grid-cols-1 md:grid-cols-3 gap-14 md:gap-6 mx-6 md:m-0 ">
             {/* PROJECTS */}
 
 
